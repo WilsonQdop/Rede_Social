@@ -22,3 +22,6 @@ services:
       - DB_USER=Qdop
       - DB_PASS=Qdop123
       - JWT_SECRET=${JWT_SECRET}
+
+    volumes:
+    - ./Uploads_imagens:/app/Uploads_imagens

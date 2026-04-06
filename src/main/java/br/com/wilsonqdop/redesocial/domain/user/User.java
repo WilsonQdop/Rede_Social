@@ -16,6 +16,19 @@ public class User {
     private String email;
     private String password;
     private String bio;
+    private String profilePictureUrl;
+
+    public String getProfilePictureUrl() {
+        return profilePictureUrl;
+    }
+
+    public void setProfilePictureUrl(String profilePictureUrl) {
+        this.profilePictureUrl = profilePictureUrl;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
 
     public UUID getId() {
         return id;

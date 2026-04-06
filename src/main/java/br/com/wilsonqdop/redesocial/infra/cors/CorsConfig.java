@@ -11,6 +11,8 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins("http://localhost:4200") // Mudar quando o frontend for para deploy
-                .allowedMethods("GET", "POST", "DELETE", "PUT", "OPTIONS");
+                .allowedMethods("GET", "POST", "DELETE", "PUT", "OPTIONS")
+                .allowedHeaders("*")
+                .allowCredentials(true);
     }
 }

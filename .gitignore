@@ -13,6 +13,8 @@ target/
 .springBeans
 .sts4-cache
 
+### Aplicação ###
+/Uploads_imagens
 .env
 
 ### IntelliJ IDEA ###

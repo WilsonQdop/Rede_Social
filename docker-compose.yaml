@@ -21,3 +21,4 @@ services:
       - DB_NAME=redesocial_db
       - DB_USER=Qdop
       - DB_PASS=Qdop123
+      - JWT_SECRET=${JWT_SECRET}

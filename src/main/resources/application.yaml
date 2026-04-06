@@ -1,3 +1,6 @@
+
+
+          #Futuramente para Deploy, aprender um jeito que guarda essas informações sem prejudicar a segurança
 spring:
   application:
     name: redesocial
@@ -8,11 +11,16 @@ spring:
     password: ${DB_PASS:Qdop123}
     driver-class-name: org.postgresql.Driver
 
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  api:
+    security:
+      token:
+        secret: ${JWT_SECRET:secret-qdop}
